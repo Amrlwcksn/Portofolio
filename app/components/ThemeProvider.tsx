@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -11,7 +10,13 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     const system = window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
-    const initial = stored || system;
+
+    // Menambahkan pengecekan validitas untuk `stored`
+    const isValidTheme = (value: string | null): value is "light" | "dark" =>
+      value === "light" || value === "dark";
+
+    const initial: "light" | "dark" = isValidTheme(stored) ? stored : system;
+
     setTheme(initial);
     document.documentElement.classList.toggle("dark", initial === "dark");
   }, []);
