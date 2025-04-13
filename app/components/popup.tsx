@@ -53,7 +53,7 @@ const ContactButton = () => {
               <ul className="space-y-3 text-center text-base">
                 <li>
                   <a
-                    href="mailto:wicaksono@example.com"
+                    href="mailto:amrlwcksn@gmail.com"
                     className="text-blue-600 hover:underline"
                   >
                     📧 amrlwcksn@gmail.com
