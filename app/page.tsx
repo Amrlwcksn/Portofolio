@@ -192,42 +192,56 @@ export default function Home() {
 
         <div className="flex justify-center px-4">
           <div className="w-full max-w-5xl">
-            <table className="w-full text-sm text-gray-700 dark:text-gray-200 shadow-md rounded-lg overflow-hidden">
-              <thead>
-                <tr className="bg-gray-100 dark:bg-gray-900">
-                  <th className="px-4 py-2 text-left font-medium"></th>
-                  <th className="px-4 py-2 text-justify">A</th>
-                  <th className="px-4 py-2 text-justify">B</th>
-                  <th className="px-4 py-2 text-justify">C</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200 dark:bg-gray-800">
-                <tr className="">
-                  <td className="px-4 py-3 font-semibold text-blue-600 text-left">
-                    Hard Skill
-                  </td>
-                  <td className="px-4 py-3 text-justify">
-                    Computer Programming
-                  </td>
-                  <td className="px-4 py-3 text-justify">
-                    Video & Foto Editor
-                  </td>
-                  <td className="px-4 py-3 text-justify">
-                    Desain Produk Digital
-                  </td>
-                </tr>
-                <tr className="">
-                  <td className="px-4 py-3 font-semibold text-green-600 text-left">
-                    Soft Skill
-                  </td>
-                  <td className="px-4 py-3 text-justify">Team Work</td>
-                  <td className="px-4 py-3 text-justify">Creativity</td>
-                  <td className="px-4 py-3 text-justify">Time Management</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="overflow-x-auto sm:overflow-visible">
+              <table className="hidden sm:table w-full text-sm text-gray-700 dark:text-gray-200 shadow-md rounded-lg overflow-hidden">
+                <thead>
+                  <tr className="bg-gray-100 dark:bg-gray-900">
+                    <th className="px-4 py-2 text-left font-medium"></th>
+                    <th className="px-4 py-2 text-justify">A</th>
+                    <th className="px-4 py-2 text-justify">B</th>
+                    <th className="px-4 py-2 text-justify">C</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 dark:bg-gray-800">
+                  <tr>
+                    <td className="px-4 py-3 font-semibold text-blue-600 text-left">Hard Skill</td>
+                    <td className="px-4 py-3 text-justify">Computer Programming</td>
+                    <td className="px-4 py-3 text-justify">Video & Foto Editor</td>
+                    <td className="px-4 py-3 text-justify">Desain Produk Digital</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 font-semibold text-green-600 text-left">Soft Skill</td>
+                    <td className="px-4 py-3 text-justify">Team Work</td>
+                    <td className="px-4 py-3 text-justify">Creativity</td>
+                    <td className="px-4 py-3 text-justify">Time Management</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              {/* Mobile view */}
+              <div className="sm:hidden space-y-6">
+                <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md shadow">
+                  <h3 className="text-blue-600 font-semibold mb-2">Hard Skill</h3>
+                  <ul className="text-gray-700 dark:text-gray-200 list-disc pl-5 space-y-1">
+                    <li>Computer Programming</li>
+                    <li>Video & Foto Editor</li>
+                    <li>Desain Produk Digital</li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md shadow">
+                  <h3 className="text-green-600 font-semibold mb-2">Soft Skill</h3>
+                  <ul className="text-gray-700 dark:text-gray-200 list-disc pl-5 space-y-1">
+                    <li>Team Work</li>
+                    <li>Creativity</li>
+                    <li>Time Management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
 
         {/* Portofolio */}
         <div className="mt-60 mb-96 px-4">
@@ -248,7 +262,6 @@ export default function Home() {
 
                 <p className=" font-light text-gray-500">
                   Lihat Semua hasil karya saya di sini <br />
-                  <span className="font-mono">*Belum kompatibel dengan versi mobile</span>
                 </p>
                   <Link href="/porto1">
                     <button className="mt-3 bg-blue-600 text-white border-blue-600 shadow-xl p-3 rounded-2xl hover:text-white hover:bg-blue-700">
@@ -274,7 +287,6 @@ export default function Home() {
 
                 <p className=" font-light text-gray-500">
                   Lihat Semua hasil karya saya di sini<br />
-                  <span className="font-mono">*Belum kompatibel dengan versi mobile</span>
                 </p>
                   <Link href="/porto2">
                     <button className="mt-3 bg-blue-600 text-white border-blue-600 shadow-xl p-3 rounded-2xl hover:text-white hover:bg-blue-700">

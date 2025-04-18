@@ -56,17 +56,17 @@ const ContactButton = () => {
                     href="mailto:wicaksono@example.com"
                     className="text-blue-600 hover:underline"
                   >
-                    📧 wicaksono@example.com
+                    📧 amrlwcksn@gmail.com
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://wa.me/6281234567890"
+                    href="https://wa.me/6287766422358"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-600 hover:underline"
                   >
-                    💬 WhatsApp: +62 812-3456-7890
+                    💬 WhatsApp: +62 877-6642-2358
                   </a>
                 </li>
               </ul>

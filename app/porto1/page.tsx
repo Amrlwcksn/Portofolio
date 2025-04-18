@@ -1,21 +1,6 @@
-import Masonry from "../components/Masonry/Masonry";
+
 import FadeContent from "../components/FadeContent/FadeContent";
 import ThemeToggle from "../components/ThemeToggleButton";
-const data = [
-  { id: 1, image: "/Images/gambar1.jpg", height: 400 },
-  { id: 2, image: "/Images/gambar2.jpg", height: 300 },
-  { id: 3, image: "/Images/gambar3.jpg", height: 300 },
-  { id: 4, image: "/Images/gambar4.jpg", height: 800 },
-  { id: 5, image: "/Images/gambar5.jpg", height: 300 },
-  { id: 6, image: "/Images/gambar6.jpg", height: 300 },
-  { id: 7, image: "/Images/gambar7.jpg", height: 900 },
-  { id: 8, image: "/Images/gambar8.jpg", height: 300 },
-  { id: 9, image: "/Images/gambar9.jpg", height: 300 },
-  { id: 9, image: "/Images/gambar10.jpg", height: 300 },
-  { id: 9, image: "/Images/gambar11.jpg", height: 900 },
-  { id: 9, image: "/Images/gambar12.jpg", height: 300 },
-  { id: 9, image: "/Images/gambar13.jpg", height: 300 },
-];
 import Link from "next/link";
 
 const Porto1 = () => {
@@ -28,25 +13,55 @@ const Porto1 = () => {
           <Link href="porto1">
             <h1 className="font-bold">Albums</h1>
           </Link>
-            <ThemeToggle />
+            
           </div>
         </FadeContent>
       </div>
       {/* Done */}
 
       {/* Konten  */}
-      <div className="ml-44 mr-44 mt-28">
-        <h1 className="text-center font-bold text-5xl">Foto</h1>
-        <Masonry data={data} />
+      <FadeContent>
+      <div className="mx-auto mt-28 px-4 max-w-screen-lg ">
+        <div className="flex flex-wrap gap-3 justify-start md:justify-center">
+        <Link href="/">
+            <button className="bg-gray-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-600 transition-all">
+              Home
+            </button>
+          </Link>
+          <Link href="">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-700 transition-all">
+              Foto
+            </button>
+          </Link>
+          <Link href="">
+            <button className="bg-gray-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-600 transition-all">
+              Video
+            </button>
+          </Link>
+        </div>
+          
+
+         {/* Foto */}
+        <div className="columns-1 sm:columns-2 md:columns-3 gap-4 mt-10">
+            <img src="Images/gambar1.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="Images/gambar2.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="Images/gambar3.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="Images/gambar4.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="Images/gambar5.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="Images/gambar6.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="Images/gambar10.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="Images/gambar11.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+        </div>
       </div>
-      {/* Done */}
+      </FadeContent>
 
       {/* Footer */}
       <div className="bg-black mt-10 p-5">
         <h1 className="text-gray-400 text-center">
-          Copyright © 2025 - Amrlwcksn All right reserved
+          Copyright © 2025 - Amrlwcksn All rights reserved
         </h1>
       </div>
+
       {/* Selesai */}
     </>
   );
