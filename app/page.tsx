@@ -70,7 +70,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-6 border-2 border-zinc-300  hover:ansition-all duration-300 p-2 rounded-2xl w-full max-w-fit mx-auto hidden sm:block">
             <FadeContent>
               <Link href="/aboute">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl c w-full md:w-auto">
                   About Me 
                 </button>
               </Link>
@@ -182,19 +182,19 @@ export default function Home() {
       <div className="bg-white rounded-xl mt-2 p-5 block sm:hidden dark:bg-black">
       <FadeContent>
               <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-gray-100 w-full md:w-auto">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   About Me 
                 </button>
               </Link>
 
               <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-gray-100 w-full md:w-auto">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   Blog 
                 </button>
               </Link>
 
               <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-gray-100 w-full md:w-auto">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   Curriculum Vitae
                 </button>
               </Link>
