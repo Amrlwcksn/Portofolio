@@ -9,13 +9,15 @@ export default function Navbar() {
 
   return (
     <nav className="">
-      <div className="mt-5">
+      <div className=" flex hover:scale-105 transition duration-200">
         <h1
           onClick={handleClick}
-          className="mb-5 text-xl font-bold cursor-pointer"
+          className="mb-5 text-xl font-bold cursor-pointer "
         >
-          Portofolio
+          Kembali Ke-atas
         </h1>
+        <img src="/Images/arrowup.png" alt="" onClick={handleClick} className="w-10 h-10 -mt-2 cursor-pointer "/>
+
       </div>
     </nav>
   );

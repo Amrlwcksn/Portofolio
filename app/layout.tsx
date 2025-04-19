@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -34,7 +35,7 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/icon.png" type="image/x-icon" />
       </head>
-      <body className={`bg-white text-black dark:bg-gray-950 dark:text-white`}>
+      <body className={`bg-gray-100 text-black dark:bg-neutral-950 dark:text-white`}>
          <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

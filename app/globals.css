@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #cacaca;
   --foreground: #171717;
 }
 
@@ -24,4 +24,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@font-face {
+  font-family: 'notosansjp-medium';
+  src: url('/fonts/NotoSansJP-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
