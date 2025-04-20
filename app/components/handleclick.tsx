@@ -14,10 +14,8 @@ export default function Navbar() {
           onClick={handleClick}
           className="mb-5 text-xl font-bold cursor-pointer "
         >
-          Kembali Ke-atas
+          Kembali Ke-atas ^
         </h1>
-        <img src="/Images/arrowup.png" alt="" onClick={handleClick} className="w-10 h-10 -mt-2 cursor-pointer "/>
-
       </div>
     </nav>
   );

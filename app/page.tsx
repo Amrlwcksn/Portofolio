@@ -20,7 +20,7 @@ export default function Home() {
     <>
      <div className="w-full max-w-6xl mx-auto px-5 py-10 ">
       {/* kotak 1*/}
-      <div className="bg-white rounded-xl dark:bg-black">
+      <div className="bg-white rounded-3xl dark:bg-neutral-900">
         <div className="p-5 flex justify-between ">
           <FadeContent>
           <h1 className="font-notojp font-bold mt-2 text-2xl">
@@ -34,7 +34,7 @@ export default function Home() {
       </div>
 
       {/* kotak 2 */}
-      <div className="bg-white rounded-xl mt-2 p-5 dark:bg-black">
+      <div className="bg-white rounded-3xl mt-2 p-5 dark:bg-neutral-900">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 p-3">
 
           {/* Kiri - Sapaan */}
@@ -46,31 +46,8 @@ export default function Home() {
           {/* Tengah - Tombol Navigasi */}
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-6 border-2 border-zinc-300  hover:ansition-all duration-300 p-2 rounded-2xl w-full max-w-fit mx-auto sm: hidden">
             <FadeContent>
-              <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  About Me 
-                </button>
-              </Link>
-
-              <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  Blog 
-                </button>
-              </Link>
-
-              <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  Curriculum Vitae
-                </button>
-              </Link>
-            </FadeContent>
-          </div>
-
-          {/* mobile */}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-6 border-2 border-zinc-300  hover:ansition-all duration-300 p-2 rounded-2xl w-full max-w-fit mx-auto hidden sm:block">
-            <FadeContent>
               <Link href="/aboute">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl c w-full md:w-auto">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   About Me 
                 </button>
               </Link>
@@ -81,7 +58,30 @@ export default function Home() {
                 </button>
               </Link>
 
-              <Link href="">
+              <Link href="/cv">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                  Curriculum Vitae
+                </button>
+              </Link>
+            </FadeContent>
+          </div>
+
+          {/* mobile */}
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-6 border-2 border-zinc-300  hover:ansition-all duration-300 p-2 rounded-3xl w-full max-w-fit mx-auto hidden sm:block">
+            <FadeContent>
+              <Link href="/aboute">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                  About Me 
+                </button>
+              </Link>
+
+              <Link href="/blog">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                  Blog 
+                </button>
+              </Link>
+
+              <Link href="/cv">
                 <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   Curriculum Vitae
                 </button>
@@ -179,7 +179,7 @@ export default function Home() {
         </div>
       </div>
       {/* kotak-mobile */}
-      <div className="bg-white rounded-xl mt-2 p-5 block sm:hidden dark:bg-black">
+      <div className="bg-white rounded-xl mt-2 p-5 block sm:hidden dark:bg-neutral-900">
       <FadeContent>
               <Link href="">
                 <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
@@ -204,13 +204,13 @@ export default function Home() {
 
             </FadeContent>
       </div>
-    {/* karya  */}
-      <div className="bg-white dark:bg-black rounded-xl mt-2 p-5 flex  justify-center">
+    {/* karya/kotak 3  */}
+      <div className="bg-white dark:bg-neutral-900 rounded-3xl mt-2 p-5 flex  justify-center">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-52">
           {/* Kiri */}
           <div className="justify-center">
               <SpotlightCard
-                className="dark:bg-gray-900 custom-spotlight-card"
+                className="dark:bg-neutral-950 custom-spotlight-card"
                 spotlightColor="rgba(0, 229, 255, 0.2)"
               >
                 <img
@@ -236,7 +236,7 @@ export default function Home() {
             {/* kanan */}
           <div className="justify-center">
               <SpotlightCard
-                className="dark:bg-gray-900 custom-spotlight-card"
+                className="dark:bg-neutral-950 custom-spotlight-card"
                 spotlightColor="rgba(0, 229, 255, 0.2)"
               >
                 <img
@@ -259,8 +259,8 @@ export default function Home() {
             </div>
           </div>
       </div>
-      {/* Footer */}
-      <div className="bg-white dark:bg-black rounded-xl mt-2 p-5">
+      {/* Footer  */}
+      <div className="bg-white dark:bg-neutral-900 rounded-3xl mt-2 p-5">
         <div className=" flex flex-col md:flex-row justify-between gap-4">
           <div className="flex-1">
             <h1 className="font-notojp font-bold text-4xl">
@@ -270,10 +270,11 @@ export default function Home() {
               Harapan selalu merekah,<br />
               meski tantangan datang menjajah.
             </p>
+            <img src="/Images/Codex.png" alt="" className="w-20 rounded-xl mt-10"/>
           </div>
 
           {/* Handleclick pindah ke bawah saat mobile */}
-          <div className="md:mt-36 mt-10 self-end md:self-auto">
+          <div className="md:mt-64 mt-10 self-end md:self-auto">
             <Handleclick />
           </div>
         </div>

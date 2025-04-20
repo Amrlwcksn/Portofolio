@@ -35,7 +35,7 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/icon.png" type="image/x-icon" />
       </head>
-      <body className={`bg-gray-100 text-black dark:bg-neutral-950 dark:text-white`}>
+      <body className={`bg-gray-100 text-black dark:bg-neutral-800 dark:text-white`}>
          <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
