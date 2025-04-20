@@ -1,3 +1,5 @@
+'use client'
+
 import Handleclick from "./components/handleclick";
 import ThemeToggle from "./components/ThemeToggleButton";
 import FadeContent from "./components/FadeContent/FadeContent";
@@ -11,6 +13,22 @@ import ScrollFloat from "./components/ScrollFloat/ScrollFloat";
 import SpotlightCard from "./components/SpotlightCard/SpotlightCard";
 import Link from "next/link";
 import Clock from "./components/clock";
+
+const handlecv = () => {
+  const link = document.createElement('a');
+  link.href = '/cv'; // Ganti dengan path file kamu // Nama file saat di-download
+  link.click();
+};
+const handleblog = () => {
+  const link = document.createElement('a');
+  link.href = '/blog'; // Ganti dengan path file kamu // Nama file saat di-download
+  link.click();
+};
+const handleabute = () => {
+  const link = document.createElement('a');
+  link.href = '/aboute'; // Ganti dengan path file kamu // Nama file saat di-download
+  link.click();
+};
 
 
 
@@ -182,19 +200,19 @@ export default function Home() {
       <div className="bg-white rounded-xl mt-2 p-5 block sm:hidden dark:bg-neutral-900">
       <FadeContent>
               <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                <button onClick={handleabute} className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   About Me 
                 </button>
               </Link>
 
               <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                <button onClick={handleblog} className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   Blog 
                 </button>
               </Link>
 
               <Link href="">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                <button onClick={handlecv} className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   Curriculum Vitae
                 </button>
               </Link>
