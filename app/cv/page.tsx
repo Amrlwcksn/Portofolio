@@ -1,5 +1,7 @@
 'use client'
-
+import ThemeToggle from "../components/ThemeToggleButton";
+import FadeContent from "../components/FadeContent/FadeContent";
+import Link from "next/link";
 const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/Cv/Cv_Ahmad_Amirul_Wicaksono.pdf'; // Ganti dengan path file kamu
@@ -11,6 +13,8 @@ const cv =()=>{
     return(
         <>
         <div className="w-full min-h-screen flex items-center justify-center bg-gray-100 dark:bg-neutral-800 px-5">
+            
+            <FadeContent>
             <div className="shadow-xl rounded-3xl bg-white dark:bg-neutral-900 p-5">
                 
                 <img
@@ -29,6 +33,8 @@ const cv =()=>{
                 </div>
 
             </div>
+            </FadeContent>
+
         </div>
 
 

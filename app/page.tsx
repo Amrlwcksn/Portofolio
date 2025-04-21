@@ -5,7 +5,6 @@ import ThemeToggle from "./components/ThemeToggleButton";
 import FadeContent from "./components/FadeContent/FadeContent";
 import BlurText from "./components/BlurText/BlurText";
 import DecryptedText from "./components/DecryptedText/DecryptedText";
-import Popup from "./components/popup";
 import TiltedCard from "./components/TiltedCard/TiltedCard";
 import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
 const velocity = 50;
@@ -197,7 +196,7 @@ export default function Home() {
         </div>
       </div>
       {/* kotak-mobile */}
-      <div className="bg-white rounded-xl mt-2 p-5 block sm:hidden dark:bg-neutral-900">
+      <div className="bg-white rounded-3xl mt-2 p-5 block sm:hidden dark:bg-neutral-900">
       <FadeContent>
         <div className="gap">
           <Link href="">
@@ -217,9 +216,6 @@ export default function Home() {
               Curriculum Vitae
             </button>
           </Link>
-          <div className="mt-2 text-center">
-            <Popup></Popup>
-            </div>
         </div>
       </FadeContent>
       </div>
@@ -351,7 +347,7 @@ export default function Home() {
           <hr className="my-4 border-t border-gray-300"/>
         </div>
         <div>
-          <h1 className="font-notojp">
+          <h1 className="font-notojp text-center">
           Copyright © 2025 - Amrlwcksn All right reserved
           </h1>
         </div>
