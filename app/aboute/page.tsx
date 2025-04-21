@@ -2,6 +2,7 @@ import TiltedCard from "../components/TiltedCard/TiltedCard";
 import FadeContent from "../components/FadeContent/FadeContent";
 import ThemeToggle from "../components/ThemeToggleButton";
 import Link from "next/link";
+import Popup from "./Popup";
 
 
 const Porto2 = () => {
@@ -61,6 +62,7 @@ const Porto2 = () => {
             website hingga proyek kreatif seperti Arduino. Terbuka untuk kolaborasi dan siap
             bantu wujudkan ide Anda jadi nyata!
           </p>
+          <Popup></Popup>
         </div>
       </div>
     </div>
