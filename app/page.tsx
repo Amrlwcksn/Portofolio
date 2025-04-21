@@ -233,12 +233,10 @@ export default function Home() {
           </h1>
           <div className="flex justify-center gap-5 mt-2 ">
             <div className="">
-              <img src="Images/PremierePro.png" alt="" className="w-20 mx-auto" />
               <h1 className="font-notojp text-center">Premiere Pro</h1>
             </div>
               <div className="w-px h-30 bg-gray-300"></div>
             <div>
-              <img src="Images/PhotoShop.png" alt="" className="w-20 mx-auto" />
               <h1 className="font-notojp">Photoshop</h1>
             </div>
           </div>
@@ -271,12 +269,9 @@ export default function Home() {
               <img src="Images/ts.png" alt="" className="mx-auto w-28 mt-2" />
             </div>
           </div>
-
-          
-          
-
         </div>
       </div>
+
     {/* karya/kotak 4  */}
       <div className="bg-white dark:bg-neutral-900 rounded-3xl mt-2 p-5 flex  justify-center">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-52">
