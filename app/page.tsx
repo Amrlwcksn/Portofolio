@@ -16,17 +16,17 @@ import Clock from "./components/clock";
 
 const handlecv = () => {
   const link = document.createElement('a');
-  link.href = '/cv'; // Ganti dengan path file kamu // Nama file saat di-download
+  link.href = '/cv'; // tombol cv
   link.click();
 };
 const handleblog = () => {
   const link = document.createElement('a');
-  link.href = '/blog'; // Ganti dengan path file kamu // Nama file saat di-download
+  link.href = '/blog'; //tombol blog
   link.click();
 };
 const handleabute = () => {
   const link = document.createElement('a');
-  link.href = '/aboute'; // Ganti dengan path file kamu // Nama file saat di-download
+  link.href = '/aboute'; //tombol aboute
   link.click();
 };
 
@@ -199,30 +199,85 @@ export default function Home() {
       {/* kotak-mobile */}
       <div className="bg-white rounded-xl mt-2 p-5 block sm:hidden dark:bg-neutral-900">
       <FadeContent>
-              <Link href="">
-                <button onClick={handleabute} className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  About Me 
-                </button>
-              </Link>
+        <div className="gap">
+          <Link href="">
+            <button onClick={handleabute} className="mb-2 font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl bg-gray-100 dark:bg-neutral-950 hover:bg-blue-600 hover:text-white w-full md:w-auto">
+              About Me 
+            </button>
+          </Link>
 
-              <Link href="">
-                <button onClick={handleblog} className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  Blog 
-                </button>
-              </Link>
+          <Link href="">
+            <button onClick={handleblog} className="mb-2 font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl bg-gray-100 dark:bg-neutral-950 hover:bg-blue-600 hover:text-white w-full md:w-auto">
+              Blog 
+            </button>
+          </Link>
 
-              <Link href="">
-                <button onClick={handlecv} className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  Curriculum Vitae
-                </button>
-              </Link>
-              <div className="text-center">
-              <Popup></Popup>
-              </div>
-
-            </FadeContent>
+          <Link href="">
+            <button onClick={handlecv} className="mb-2 font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl bg-gray-100 dark:bg-neutral-950 hover:bg-blue-600 hover:text-white w-full md:w-auto">
+              Curriculum Vitae
+            </button>
+          </Link>
+          <div className="mt-2 text-center">
+            <Popup></Popup>
+            </div>
+        </div>
+      </FadeContent>
       </div>
-    {/* karya/kotak 3  */}
+    {/* kotak 3 what i'm using*/}
+      <div className="bg-white rounded-3xl mt-2 p-5 dark:bg-neutral-900">
+        <div className="text-center">
+          <h1 className="text-2xl font-notojp font-bold">What i'm using</h1>
+
+          <h1 className="font-notojp font-bold mt-5">
+          Make video and Foto
+          </h1>
+          <div className="flex justify-center gap-5 mt-2 ">
+            <div className="">
+              <img src="Images/PremierePro.png" alt="" className="w-20 mx-auto" />
+              <h1 className="font-notojp text-center">Premiere Pro</h1>
+            </div>
+              <div className="w-px h-30 bg-gray-300"></div>
+            <div>
+              <img src="Images/PhotoShop.png" alt="" className="w-20 mx-auto" />
+              <h1 className="font-notojp">Photoshop</h1>
+            </div>
+          </div>
+
+          <hr className="my-4 border-t border-gray-300"/>
+          <h1 className="font-notojp font-bold mt-5   "> Tech Stack</h1>
+          
+          <div className="flex flex-wrap justify-center items-center space-x-4 space-y-4">
+            {/* Next.js */}
+            <div className="flex flex-col items-center">
+              <img src="Images/nextjsDark.png" alt="" className="mx-auto w-40 mt-2 block dark:hidden" />
+              <img src="Images/nextjsLight.png" alt="" className="mx-auto w-40 mt-2 hidden dark:block" />
+            </div>
+            {/* React.js */}
+            <div className="flex flex-col items-center">
+              <img src="Images/react.png" alt="" className="mx-auto w-32 mt-2" />
+            </div>
+            {/* Tailwind */}
+            <div className="flex flex-col items-center">
+              <img src="Images/tailwindDark.png" alt="" className="mx-auto w-40 mt-2 block dark:hidden" />
+              <img src="Images/tailwindLight.png" alt="" className="mx-auto w-40 mt-2 hidden dark:block" />
+            </div>
+            {/* HTML */}
+            <div className="flex flex-col items-center">
+              <img src="Images/html.png" alt="" className="mx-auto w-28 mt-2 block dark:hidden" />
+              <img src="Images/htmlLight.png" alt="" className="mx-auto w-28 mt-2 hidden dark:block" />
+            </div>
+            {/* TypeScript */}
+            <div className="flex flex-col items-center">
+              <img src="Images/ts.png" alt="" className="mx-auto w-28 mt-2" />
+            </div>
+          </div>
+
+          
+          
+
+        </div>
+      </div>
+    {/* karya/kotak 4  */}
       <div className="bg-white dark:bg-neutral-900 rounded-3xl mt-2 p-5 flex  justify-center">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-52">
           {/* Kiri */}
