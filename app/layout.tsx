@@ -32,6 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <script defer src="https://cloud.umami.is/script.js" 
+      data-website-id="1ee56d57-f696-4866-ace2-063051816cf4"></script>
         {/* Favicon */}
         <link rel="icon" href="/icon.png" type="image/x-icon" />
       </head>
