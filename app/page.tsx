@@ -12,17 +12,14 @@ import ScrollFloat from "./components/ScrollFloat/ScrollFloat";
 import SpotlightCard from "./components/SpotlightCard/SpotlightCard";
 import Link from "next/link";
 import Clock from "./components/clock";
+import Popup from "./components/Popup";
 
 const handlecv = () => {
   const link = document.createElement('a');
   link.href = '/cv'; // tombol cv
   link.click();
 };
-const handleblog = () => {
-  const link = document.createElement('a');
-  link.href = '/blog'; //tombol blog
-  link.click();
-};
+
 const handleabute = () => {
   const link = document.createElement('a');
   link.href = '/aboute'; //tombol aboute
@@ -68,13 +65,6 @@ export default function Home() {
                   About Me 
                 </button>
               </Link>
-
-              <Link href="/blog">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  Blog 
-                </button>
-              </Link>
-
               <Link href="/cv">
                 <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   Curriculum Vitae
@@ -89,12 +79,6 @@ export default function Home() {
               <Link href="/aboute">
                 <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   About Me 
-                </button>
-              </Link>
-
-              <Link href="/blog">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  Blog 
                 </button>
               </Link>
 
@@ -206,16 +190,14 @@ export default function Home() {
           </Link>
 
           <Link href="">
-            <button onClick={handleblog} className="mb-2 font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl bg-gray-100 dark:bg-neutral-950 hover:bg-blue-600 hover:text-white w-full md:w-auto">
-              Blog 
-            </button>
-          </Link>
-
-          <Link href="">
             <button onClick={handlecv} className="mb-2 font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl bg-gray-100 dark:bg-neutral-950 hover:bg-blue-600 hover:text-white w-full md:w-auto">
               Curriculum Vitae
             </button>
           </Link>
+          <div className="text-center">
+          <Popup></Popup>
+          </div>
+
         </div>
       </FadeContent>
       </div>
@@ -238,7 +220,7 @@ export default function Home() {
           </div>
 
           <hr className="my-4 border-t border-gray-300"/>
-          <h1 className="font-notojp font-bold mt-5   "> Tech Stack</h1>
+          <h1 className="font-notojp font-bold mt-5 text-2xl   "> Tech Stack</h1>
           
           <div className="flex flex-wrap justify-center items-center space-x-4 space-y-4">
             {/* Next.js */}

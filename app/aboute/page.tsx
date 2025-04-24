@@ -3,14 +3,24 @@ import FadeContent from "../components/FadeContent/FadeContent";
 import ThemeToggle from "../components/ThemeToggleButton";
 import Link from "next/link";
 import Popup from "./Popup";
+import Stack from "../components/Stack/Stack";
+const images = [
+  { id: 1, img: '/Images/job1.jpeg'},
+  { id: 2, img: '/Images/job2.jpeg'},
+  { id: 3, img: '/Images/html.jpeg'},
+  { id: 4, img: '/Images/arduino1.jpeg'},
+  { id: 5, img: '/Images/arduino4.jpeg'},
+  
+
+
+
+];
 
 
 const Porto2 = () => {
   return (
     <>
-    
-
-    <div className="mx-auto mt-28 px-4 max-w-screen-lg">
+    <div className="mx-auto mt-10 px-4 max-w-screen-lg">
       <div className="bg-white rounded-3xl dark:bg-neutral-900">
         <div className="p-5 flex justify-between ">
           <FadeContent>
@@ -24,56 +34,82 @@ const Porto2 = () => {
           </FadeContent>
         </div>
       </div>
+    </div>
 
-      <div className="bg-white rounded-3xl mt-2 p-5 dark:bg-neutral-900">
-        <div className="flex flex-col md:flex-row gap-5 items-center md:items-start text-center md:text-left">
-    
-        {/* Gambar */}
-        <div>
-          <TiltedCard
-            imageSrc="Images/abouteProfile.png"
-            altText="Amrlwcksn_Profile"
-            captionText="Ahmad Amirul Wicaksono"
-            containerHeight="300px"
-            containerWidth="300px"
-            imageHeight="300px"
-            imageWidth="300px"
-            rotateAmplitude={12}
-            scaleOnHover={1.2}
-            showMobileWarning={false}
-            showTooltip={true}
-            displayOverlayContent={true}
-            overlayContent={
-              <p className="tilted-card-demo-text font-notojp bg-blue-600 p-2 rounded-xl text-white">
-                amrlwcksn
+    {/* konten */}
+    <div className="mx-auto mt-2 px-4 max-w-screen-lg">
+      <div className="bg-white rounded-3xl dark:bg-neutral-900">
+        <div className="p-5 flex flex-col md:flex-row gap-6 justify-between">
+          
+          {/* Kiri: TiltedCard + Deskripsi */}
+          <div className="flex flex-col md:flex-row gap-6 flex-1 ">
+            {/* Tilted Card */}
+            <div className="flex justify-center md:justify-start p-3">
+              <TiltedCard
+                imageSrc="Images/wicaksono.png"
+                altText="Amrlwcksn_Profile"
+                captionText="Ahmad Amirul Wicaksono"
+                containerHeight="300px"
+                containerWidth="300px"
+                imageHeight="300px"
+                imageWidth="300px"
+                rotateAmplitude={12}
+                scaleOnHover={1.2}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text font-notojp bg-blue-600 p-2 rounded-xl text-white">
+                    amrlwcksn
+                  </p>
+                }
+              />
+            </div>
+
+            {/* Deskripsi */}
+            <div className="flex-1">
+              <h1 className="font-notojp text-3xl md:text-4xl font-bold mb-2">
+                Ahmad Amirul Wicaksono
+              </h1>
+              <p className="text-base md:text-lg leading-relaxed text-justify">
+                Halo! Saya Wicaksono, mahasiswa Teknologi Informasi yang juga aktif sebagai
+                videografer dan editor lepas. Saya suka eksplorasi teknologi, dari pengembangan
+                website hingga proyek kreatif seperti Arduino. Terbuka untuk kolaborasi dan siap
+                bantu wujudkan ide Anda jadi nyata!
               </p>
-            }
-          />
-        </div>
-
-        {/* Teks */}
-        <div className="max-w-md mt-4 md:mt-0">
-          <h1 className="font-notojp text-3xl md:text-4xl font-bold mb-2">
-            Ahmad Amirul Wicaksono
-          </h1>
-          <p className="text-base md:text-lg leading-relaxed text-justify">
-            Halo! Saya Wicaksono, mahasiswa Teknologi Informasi yang juga aktif sebagai
-            videografer dan editor lepas. Saya suka eksplorasi teknologi, dari pengembangan
-            website hingga proyek kreatif seperti Arduino. Terbuka untuk kolaborasi dan siap
-            bantu wujudkan ide Anda jadi nyata!
-          </p>
-          <Popup></Popup>
+              <Popup />
+              <div className="justify-items-end -mt-14 p-3 ">
+              <Stack
+                randomRotation={true}
+                sensitivity={180}
+                sendToBackOnClick={false}
+                cardDimensions={{ width: 150, height: 150 }}
+                cardsData={images}
+              />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-        <div className="bg-white dark:bg-neutral-900 rounded-3xl mt-2 p-5">
-          <div>
-            <h1 className="font-notojp text-center">
-              Copyright © 2025 - Amrlwcksn All right reserved
-            </h1>
-          </div>    
-        </div>
+
+    {/* footer */}
+    <div className="mx-auto mt-2 px-4 max-w-screen-lg">
+      <div className="bg-white rounded-3xl dark:bg-neutral-900 p-5">
+        <h1 className="font-notojp text-center">
+          Copyright © 2025 - Amrlwcksn All right reserved
+         </h1>
+      </div>
     </div>
+    
+
+
+
+
+      
+        
+      
+    
     </>
   );
 };

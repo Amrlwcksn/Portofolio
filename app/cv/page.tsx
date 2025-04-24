@@ -12,7 +12,21 @@ const handleDownload = () => {
 const cv =()=>{
     return(
         <>
-        <div className="w-full min-h-screen flex items-center justify-center bg-gray-100 dark:bg-neutral-800 px-5">
+        <div className=" mx-auto mt-10 px-4 max-w-screen-lg mb-2">
+            <div className="p-5 flex justify-between bg-white rounded-3xl dark:bg-neutral-900">
+            <FadeContent>
+            <Link href="/">
+            <button  className="font-notojp font-bold mt-2 text-2xl">Portofolio</button>
+            </Link>
+            
+            </FadeContent>
+            <FadeContent>
+            <ThemeToggle></ThemeToggle>
+            </FadeContent>
+            </div>
+        </div>
+        
+        <div className="w-full  flex items-center justify-center bg-gray-100 dark:bg-neutral-800 px-5">
             
             <FadeContent>
             <div className="shadow-xl rounded-3xl bg-white dark:bg-neutral-900 p-5">
