@@ -190,7 +190,7 @@ export default function Home() {
             </button>
           </Link>
           <div className="text-center">
-          <Popup></Popup>
+          
           </div>
 
         </div>
