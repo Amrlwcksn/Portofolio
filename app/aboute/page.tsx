@@ -97,7 +97,7 @@ const Porto2 = () => {
     <div className="mx-auto mt-2 px-4 max-w-screen-lg">
       <div className="bg-white rounded-3xl dark:bg-neutral-900 p-5">
         <h1 className="font-notojp text-center">
-          Copyright © 2025 - Amrlwcksn All right reserved
+          Copyright © 2025 - Amrlwcksn All right reserved.
          </h1>
       </div>
     </div>
