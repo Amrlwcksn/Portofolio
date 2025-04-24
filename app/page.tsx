@@ -4,15 +4,10 @@ import Handleclick from "./components/handleclick";
 import ThemeToggle from "./components/ThemeToggleButton";
 import FadeContent from "./components/FadeContent/FadeContent";
 import BlurText from "./components/BlurText/BlurText";
-import DecryptedText from "./components/DecryptedText/DecryptedText";
-import TiltedCard from "./components/TiltedCard/TiltedCard";
-import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
-const velocity = 50;
-import ScrollFloat from "./components/ScrollFloat/ScrollFloat";
 import SpotlightCard from "./components/SpotlightCard/SpotlightCard";
 import Link from "next/link";
 import Clock from "./components/clock";
-import Popup from "./components/Popup";
+
 
 const handlecv = () => {
   const link = document.createElement('a');
