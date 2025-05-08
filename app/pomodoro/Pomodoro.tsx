@@ -36,23 +36,30 @@ export default function PomodoroTimer() {
   };
 
   // Stop Timer
-  const stopTimer = () => {
-    setIsRunning(false);
+const stopTimer = () => {
+  setIsRunning(false);
+  if (timerRef.current) {
     clearInterval(timerRef.current);
-  };
+  }
+};
 
-  // Reset Timer
-  const resetTimer = () => {
-    setIsRunning(false);
+// Reset Timer
+const resetTimer = () => {
+  setIsRunning(false);
+  if (timerRef.current) {
     clearInterval(timerRef.current);
-    setTimeLeft(25 * 60); // Reset ke 25 menit
-  };
+  }
+  setTimeLeft(25 * 60); // Reset ke 25 menit
+};
 
   // Cleanup timer saat komponen unmount
   useEffect(() => {
-    return () => clearInterval(timerRef.current);
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
   }, []);
-
   return (
     <div className="text-center py-10">
       <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-9xl font-notojp font-bold">
