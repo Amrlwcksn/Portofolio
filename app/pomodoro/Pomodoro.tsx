@@ -5,7 +5,7 @@ import Clock from "../components/clock";
 export default function PomodoroTimer() {
   const [timeLeft, setTimeLeft] = useState(25 * 60); // Default 25 menit
   const [isRunning, setIsRunning] = useState(false); // Untuk track status timer
-  const timerRef = useRef(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
   const alarmRef = useRef(null); // Untuk suara alarm
   const isAlarmPlayedRef = useRef(false); // Cegah bunyi berulang-ulang
 
