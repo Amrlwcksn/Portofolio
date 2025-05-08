@@ -10,14 +10,10 @@ const images = [
   { id: 3, img: '/Images/html.jpeg'},
   { id: 4, img: '/Images/arduino1.jpeg'},
   { id: 5, img: '/Images/arduino4.jpeg'},
-  
-
-
-
 ];
 
 
-const Porto2 = () => {
+const aboute = () => {
   return (
     <>
     <div className="mx-auto mt-10 px-4 max-w-screen-lg">
@@ -100,17 +96,8 @@ const Porto2 = () => {
           Copyright © 2025 - Amrlwcksn All right reserved.
          </h1>
       </div>
-    </div>
-    
-
-
-
-
-      
-        
-      
-    
+    </div>    
     </>
   );
 };
-export default Porto2;
+export default aboute;

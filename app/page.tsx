@@ -21,6 +21,12 @@ const handleabute = () => {
   link.click();
 };
 
+const handlepomodoro = ()=>{
+  const link = document.createElement('a');
+  link.href ='/pomodoro';
+  link.click();
+}
+
 
 
 
@@ -51,24 +57,7 @@ export default function Home() {
             text="Hallo! 👋🏻"
             className="font-notojp font-bold text-3xl md:text-4xl"
           />
-
-          {/* Tengah - Tombol Navigasi */}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-6 border-2 border-zinc-300  hover:ansition-all duration-300 p-2 rounded-2xl w-full max-w-fit mx-auto sm: hidden">
-            <FadeContent>
-              <Link href="/aboute">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  About Me 
-                </button>
-              </Link>
-              <Link href="/cv">
-                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
-                  Curriculum Vitae
-                </button>
-              </Link>
-            </FadeContent>
-          </div>
-
-          {/* mobile */}
+          {/* desktop */}
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-6 border-2 border-zinc-300  hover:ansition-all duration-300 p-2 rounded-3xl w-full max-w-fit mx-auto hidden sm:block">
             <FadeContent>
               <Link href="/aboute">
@@ -80,6 +69,11 @@ export default function Home() {
               <Link href="/cv">
                 <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
                   Curriculum Vitae
+                </button>
+              </Link>
+              <Link href="/pomodoro">
+                <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white w-full md:w-auto">
+                  Pomodoro-App
                 </button>
               </Link>
             </FadeContent>
