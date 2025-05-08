@@ -10,7 +10,7 @@ export default function PomodoroTimer() {
   const isAlarmPlayedRef = useRef(false); // Cegah bunyi berulang-ulang
 
   // Format waktu menjadi mm:ss
-  const formatTime = (seconds) => {
+  const formatTime = (seconds:number): string => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
     return `${String(minutes).padStart(2, "0")}:${String(remainingSeconds).padStart(2, "0")}`;
