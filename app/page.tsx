@@ -55,7 +55,7 @@ export default function Home() {
           {/* Kiri - Sapaan */}
           <BlurText
             text="Hallo! 👋🏻"
-            className="font-notojp font-bold text-3xl md:text-4xl"
+            className="font-notojp font-bold text-3xl md:text-2xl text-center"
           />
           {/* desktop */}
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-6 border-2 border-zinc-300  hover:ansition-all duration-300 p-2 rounded-3xl w-full max-w-fit mx-auto hidden sm:block">
@@ -113,7 +113,7 @@ export default function Home() {
               />
               <BlurText
                 text="Ahmad Amirul Wicaksono"
-                className="font-notojp font-bold text-5xl"
+                className="font-notojp font-bold text-5sxl md:text-5xl"
               />
               <BlurText
                 text="Frontend Web-Developer & Video/Foto Editor"
@@ -132,15 +132,16 @@ export default function Home() {
             <div className=" sm:hidden -mt-10">
               <BlurText
                 text="i'm"
-                className="font-notojp font-bold text-3xl"
+                className="font-notojp font-bold text-2xl"
               />
               <BlurText
                 text="Ahmad Amirul Wicaksono"
-                className="font-notojp font-bold text-5xl"
+                className="font-notojp font-bold text-2xl"
               />
+              <hr className="border-t-2 border-gray-300 my-2" />
               <BlurText
                 text="Frontend Web-Developer & Video/Foto Editor"
-                className="font-notojp font-bold text-3xl"
+                className="font-notojp font-bold "
               />
               <BlurText
                 text="Mahasiswa di Universitas PGRI Semarang yang sedang menempuh"
@@ -148,7 +149,7 @@ export default function Home() {
               />
               <BlurText
                 text="pendidikan pada program studi Pendidikan Teknologi Informasi."
-                className="font-notojp font-medium text-1xl"
+                className="font-notojp font-medium"
               />
             </div>
 
@@ -214,26 +215,26 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center space-x-4 space-y-4">
             {/* Next.js */}
             <div className="flex flex-col items-center">
-              <img src="Images/nextjsDark.png" alt="" className="mx-auto w-40 mt-2 block dark:hidden" />
-              <img src="Images/nextjsLight.png" alt="" className="mx-auto w-40 mt-2 hidden dark:block" />
+              <img src="Images/nextjsDark.png" alt="" className="mx-auto w-28 mt-2 block dark:hidden" />
+              <img src="Images/nextjsLight.png" alt="" className="mx-auto w-28 mt-2 hidden dark:block" />
             </div>
             {/* React.js */}
             <div className="flex flex-col items-center">
-              <img src="Images/react.png" alt="" className="mx-auto w-32 mt-2" />
+              <img src="Images/react.png" alt="" className="mx-auto w-20 mt-2" />
             </div>
             {/* Tailwind */}
             <div className="flex flex-col items-center">
-              <img src="Images/tailwindDark.png" alt="" className="mx-auto w-40 mt-2 block dark:hidden" />
-              <img src="Images/tailwindLight.png" alt="" className="mx-auto w-40 mt-2 hidden dark:block" />
+              <img src="Images/tailwindDark.png" alt="" className="mx-auto w-36 mt-2 block dark:hidden" />
+              <img src="Images/tailwindLight.png" alt="" className="mx-auto w-36 mt-2 hidden dark:block" />
             </div>
             {/* HTML */}
             <div className="flex flex-col items-center">
-              <img src="Images/html.png" alt="" className="mx-auto w-28 mt-2 block dark:hidden" />
+              <img src="Images/html.png" alt="" className="mx-auto w-20 mt-2 block dark:hidden" />
               <img src="Images/htmlLight.png" alt="" className="mx-auto w-28 mt-2 hidden dark:block" />
             </div>
             {/* TypeScript */}
             <div className="flex flex-col items-center">
-              <img src="Images/ts.png" alt="" className="mx-auto w-28 mt-2" />
+              <img src="Images/ts.png" alt="" className="mx-auto w-20 mt-2" />
             </div>
           </div>
         </div>
@@ -298,14 +299,14 @@ export default function Home() {
       <div className="bg-white dark:bg-neutral-900 rounded-3xl mt-2 p-5">
         <div className=" flex flex-col md:flex-row justify-between gap-4">
           <div className="flex-1">
-            <h1 className="font-notojp font-bold text-4xl">
+            <h1 className="font-notojp font-bold text-3xl">
               Habis cuy 😔
             </h1>
-            <p className="font-notojp font-medium mt-10 md:mt-20 text-2xl">
+            <p className="font-notojp font-medium mt-10 md:mt-20 ">
               Harapan selalu merekah,<br />
               meski tantangan datang menjajah.
             </p>
-            <img src="/Images/Codex.png" alt="" className="w-20 rounded-xl mt-10"/>
+            {/* <img src="/Images/Codex.png" alt="" className="w-20 rounded-xl mt-10"/> */}
           </div>
 
           {/* Handleclick pindah ke bawah saat mobile */}
