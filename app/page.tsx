@@ -138,7 +138,9 @@ export default function Home() {
                 text="Ahmad Amirul Wicaksono"
                 className="font-notojp font-bold text-2xl"
               />
+              <FadeContent>
               <hr className="border-t-2 border-gray-300 my-2" />
+              </FadeContent>
               <BlurText
                 text="Frontend Web-Developer & Video/Foto Editor"
                 className="font-notojp font-bold "
