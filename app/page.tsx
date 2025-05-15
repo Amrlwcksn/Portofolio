@@ -305,8 +305,8 @@ export default function Home() {
               Habis cuy 😔
             </h1>
             <p className="font-notojp font-medium mt-10 md:mt-20 ">
-              Harapan selalu merekah,<br />
-              meski tantangan datang menjajah.
+              Studying is a privilage &,<br />
+              a power.
             </p>
             {/* <img src="/Images/Codex.png" alt="" className="w-20 rounded-xl mt-10"/> */}
           </div>
