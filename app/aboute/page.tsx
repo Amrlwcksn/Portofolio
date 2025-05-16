@@ -16,7 +16,7 @@ const images = [
 const aboute = () => {
   return (
     <>
-    <div className="mx-auto mt-10 px-4 max-w-screen-lg">
+    <div className="w-full max-w-6xl mx-auto px-5 mt-5">
       <div className="bg-white rounded-3xl dark:bg-neutral-900">
         <div className="p-5 flex justify-between ">
           <FadeContent>
@@ -33,7 +33,7 @@ const aboute = () => {
     </div>
 
     {/* konten */}
-    <div className="mx-auto mt-2 px-4 max-w-screen-lg">
+    <div className="w-full max-w-6xl mx-auto px-5 mt-2">
       <div className="bg-white rounded-3xl dark:bg-neutral-900">
         <div className="p-5 flex flex-col md:flex-row gap-6 justify-between">
           
@@ -90,7 +90,7 @@ const aboute = () => {
     </div>
 
     {/* footer */}
-    <div className="mx-auto mt-2 px-4 max-w-screen-lg">
+    <div className="w-full max-w-6xl mx-auto px-5 mt-2">
       <div className="bg-white rounded-3xl dark:bg-neutral-900 p-5">
         <h1 className="font-notojp text-center">
           Copyright © 2025 - Amrlwcksn All right reserved.

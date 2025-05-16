@@ -75,7 +75,7 @@ export default function PomodoroTimer() {
   const resetTimer = () => {
     stopTimer();
     setTimeLeft(WORK_DURATION);
-    setMode("work");
+    setMode("rest");
     isAlarmPlayedRef.current = false;
   };
 

@@ -262,7 +262,7 @@ export default function Home() {
                 <p className=" font-light text-gray-500">
                   Lihat Semua hasil karya saya di sini <br />
                 </p>
-                  <Link href="/porto1">
+                  <Link href="/porto1/foto">
                     <button className="mt-3 bg-blue-600 text-white border-blue-600 shadow-xl p-3 rounded-2xl hover:text-white hover:bg-blue-700">
                       Lihat
                     </button>
@@ -304,9 +304,8 @@ export default function Home() {
             <h1 className="font-notojp font-bold text-3xl">
               Habis cuy 😔
             </h1>
-            <p className="font-notojp font-medium mt-10 md:mt-20 ">
-              Studying is a privilage &,<br />
-              a power.
+            <p className="font-notojp font-medium mt-10 md:mt-20 md:text-2xl ">
+              Studying is a privilage &, a power.
             </p>
             {/* <img src="/Images/Codex.png" alt="" className="w-20 rounded-xl mt-10"/> */}
           </div>

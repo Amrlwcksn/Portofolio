@@ -1,6 +1,6 @@
 
-import FadeContent from "../components/FadeContent/FadeContent";
-import ThemeToggle from "../components/ThemeToggleButton";
+import FadeContent from "../../components/FadeContent/FadeContent";
+import ThemeToggle from "../../components/ThemeToggleButton";
 import Link from "next/link";
 
 const Porto1 = () => {
@@ -28,7 +28,7 @@ const Porto1 = () => {
             <Link href="">
               <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl bg-blue-600 text-white dark:text-white w-full md:w-auto">Foto</button>            
             </Link>
-            <Link href="">
+            <Link href="./video">
               <button className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl bg-neutral-800  hover:bg-blue-600 w-full md:w-auto">Video</button>            
             </Link>
           </div>
@@ -37,14 +37,14 @@ const Porto1 = () => {
          {/* Foto */}
          <div className="">
           <div className="columns-1 sm:columns-2 md:columns-3 gap-4 p-5">
-            <img src="Images/gambar1.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
-            <img src="Images/gambar2.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
-            <img src="Images/gambar3.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
-            <img src="Images/gambar4.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
-            <img src="Images/gambar5.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
-            <img src="Images/gambar6.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
-            <img src="Images/gambar10.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
-            <img src="Images/gambar11.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar1.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar2.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar3.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar4.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar5.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar6.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar10.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
+            <img src="../Images/gambar11.jpg" alt="" className="mb-4 rounded-md break-inside-avoid transition-transform hover:scale-105 duration-300" />
           </div>
          </div>
         
