@@ -64,15 +64,15 @@ export default function PomodoroTimer() {
   }, []);
 
   return (
-    <div className="text-center py-10">
+    <div className="text-center py-10 flex flex-col items-center">
       <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-9xl font-notojp font-bold">
         {formatTime(timeLeft)}
       </h1>
-      <div className="mt-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <div className="mt-5">
         <Clock />
       </div>
       <div>
-        <h1 className="mt-10 text-center font-notojp font-bold ">
+        <h1 className="mt-1 font-notojp font-bold ">
           You don’t need to be perfect, just consistent.
         </h1>
       </div>
