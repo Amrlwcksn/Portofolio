@@ -9,9 +9,18 @@ const pomodoro = ()=>{
         <>
         <FadeContent>
         <div className="w-full max-w-8xl mx-auto px-5 py-10">
-            <div className="p-5 rounded-3xl  bg-white dark:bg-neutral-900">
-                <a href="/" className="font-notojp font-bold hover:scale-105 transition duration-200 px-4 py-2 rounded-2xl hover:bg-blue-600 hover:text-white">Back</a>
+            <div className="bg-white rounded-3xl dark:bg-neutral-900">
+                <div className="p-5 flex justify-between ">
+            <FadeContent>
+                <a href="/" className="font-notojp font-medium text-2xl ">
+                 Back
+                </a>
+            </FadeContent>
+            <FadeContent>
+                <ThemeToggle></ThemeToggle>
+            </FadeContent>
             </div>
+        </div>
         </div>
         
         <div className="w-full max-w-8xl mx-auto px-5 -mt-7">
