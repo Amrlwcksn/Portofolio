@@ -1,7 +1,7 @@
 import DecryptedText from "../components/DecryptedText/DecryptedText";
 import FadeContent from "../components/FadeContent/FadeContent";
 import ThemeToggle from "../components/ThemeToggleButton";
-import Popup from "../components/Popup";
+import Popup from "./Popup";
 
 const Porto2 = () => {
   return (
